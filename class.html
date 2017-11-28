@@ -1,7 +1,7 @@
 <html>
 <head>
-<title>:::C++ структури:::</title>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>:::C++ СЃС‚СЂСѓРєС‚СѓСЂРё:::</title>
+<meta http-equiv="Content-Type" content="text/html; charset="utf-8">
 <script type="text/javascript" src="textsizer.js">
 /***********************************************
 SKRIPTA ZA GOLEMI I MALKI BUKVI
@@ -38,22 +38,22 @@ SKRIPTA ZA GOLEMI I MALKI BUKVI
 <table border="0" bordercolor="#A3558E" width="75%" bgcolor="#015756">
 <tr>
 <td>
- <p align="center"> <font color="#000000" size="+3" face="Verdana"> <strong> <font color="#42A994">Структури и класове</font> </strong> </font> </p>
+ <p align="center"> <font color="#000000" size="+3" face="Verdana"> <strong> <font color="#42A994">РЎС‚СЂСѓРєС‚СѓСЂРё Рё РєР»Р°СЃРѕРІРµ</font> </strong> </font> </p>
               
               <div align="justify"><font color="#FFFFFF" size="-0" face="Verdana"><img src="pics/Letteri.jpg" width="50" height="31" align="left">
-			  ма повече прилики между тези два типа, отколкото споменахме досега. В структурата може да има функции, 
-			  както и функциите на класа може да бъдат премахнати. Структурата може да има и конструктор и деструктор. 
-			  Ето една примерна програма, която ви демонстрира този факт. 
+			  РјР° РїРѕРІРµС‡Рµ РїСЂРёР»РёРєРё РјРµР¶РґСѓ С‚РµР·Рё РґРІР° С‚РёРїР°, РѕС‚РєРѕР»РєРѕС‚Рѕ СЃРїРѕРјРµРЅР°С…РјРµ РґРѕСЃРµРіР°. Р’ СЃС‚СЂСѓРєС‚СѓСЂР°С‚Р° РјРѕР¶Рµ РґР° РёРјР° С„СѓРЅРєС†РёРё, 
+			  РєР°РєС‚Рѕ Рё С„СѓРЅРєС†РёРёС‚Рµ РЅР° РєР»Р°СЃР° РјРѕР¶Рµ РґР° Р±СЉРґР°С‚ РїСЂРµРјР°С…РЅР°С‚Рё. РЎС‚СЂСѓРєС‚СѓСЂР°С‚Р° РјРѕР¶Рµ РґР° РёРјР° Рё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Рё РґРµСЃС‚СЂСѓРєС‚РѕСЂ. 
+			  Р•С‚Рѕ РµРґРЅР° РїСЂРёРјРµСЂРЅР° РїСЂРѕРіСЂР°РјР°, РєРѕСЏС‚Рѕ РІРё РґРµРјРѕРЅСЃС‚СЂРёСЂР° С‚РѕР·Рё С„Р°РєС‚. 
 			  <pre>
 <font color="#A2BAFF">// emp.cpp </font>
-<font color="#A2BAFF">// изграждане на employee със структура </font>
-<font color="#A2BAFF">// тази структура ще има конструктор и деструктор </font>
+<font color="#A2BAFF">// РёР·РіСЂР°Р¶РґР°РЅРµ РЅР° employee СЃСЉСЃ СЃС‚СЂСѓРєС‚СѓСЂР° </font>
+<font color="#A2BAFF">// С‚Р°Р·Рё СЃС‚СЂСѓРєС‚СѓСЂР° С‰Рµ РёРјР° РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Рё РґРµСЃС‚СЂСѓРєС‚РѕСЂ </font>
 #include < iostream.h > 
-#include < conio.h >                  <font color="#A2BAFF">// за getche() </font>
-struct emp  <font color="#A2BAFF">// структурата emp</font>
+#include < conio.h >                  <font color="#A2BAFF">// Р·Р° getche() </font>
+struct emp  <font color="#A2BAFF">// СЃС‚СЂСѓРєС‚СѓСЂР°С‚Р° emp</font>
 { 
   char name[20]; 
-  int n;               <font color="#A2BAFF">// променливите в структурата</font>
+  int n;               <font color="#A2BAFF">// РїСЂРѕРјРµРЅР»РёРІРёС‚Рµ РІ СЃС‚СЂСѓРєС‚СѓСЂР°С‚Р°</font>
   unsigned long serial_number; 
   emp()      <font color="#A2BAFF">// constructor </font>
   { 
@@ -66,30 +66,30 @@ struct emp  <font color="#A2BAFF">// структурата emp</font>
 }; 
 void main() 
 { 
-   emp e1;  <font color="#A2BAFF">// обекта е1 от тип emp</font>
+   emp e1;  <font color="#A2BAFF">// РѕР±РµРєС‚Р° Рµ1 РѕС‚ С‚РёРї emp</font>
    char ch; 
    e1.n = 0; 
    cout << "   Enter name: "; 
    do 
    { 
-     ch = getche();             <font color="#A2BAFF">// да се въвежда по 1 char наведнъж </font>
-     e1.name[e1.n] = ch;        <font color="#A2BAFF">// запазване в “name”</font>
+     ch = getche();             <font color="#A2BAFF">// РґР° СЃРµ РІСЉРІРµР¶РґР° РїРѕ 1 char РЅР°РІРµРґРЅСЉР¶ </font>
+     e1.name[e1.n] = ch;        <font color="#A2BAFF">// Р·Р°РїР°Р·РІР°РЅРµ РІ вЂњnameвЂќ</font>
      ++e1.n; 
-   } while (ch != '\r');        <font color="#A2BAFF">// КРАЙ ако се натисне еnter </font>
+   } while (ch != '\r');        <font color="#A2BAFF">// РљР РђР™ Р°РєРѕ СЃРµ РЅР°С‚РёСЃРЅРµ Рµnter </font>
    cout << "\n   Enter serial number: "; 
    cin >> e1.serial_number; 
    cout << "Employee data" << endl; 
    cout << "   Name = "; 
-   for (int j = 0; j < e1.n; ++j)   <font color="#A2BAFF">// показвай по 1 </font>
-      cout << e1.name[j];           <font color="#A2BAFF">// наведнъж </font>
+   for (int j = 0; j < e1.n; ++j)   <font color="#A2BAFF">// РїРѕРєР°Р·РІР°Р№ РїРѕ 1 </font>
+      cout << e1.name[j];           <font color="#A2BAFF">// РЅР°РІРµРґРЅСЉР¶ </font>
    cout << "\n   Serial number = " << e1.serial_number << endl; 
 }  <font color="#A2BAFF">//end main </font>
  </pre> <br>
  
-<i>Свали пример:</i> <br><br>
+<i>РЎРІР°Р»Рё РїСЂРёРјРµСЂ:</i> <br><br>
 <a href="examples/emp.cpp"><img src="pics/download_button.gif"></a> <br><br>
  
-По-долу е даден изходът на екрана при примерно изпълнение на тази програма: 
+РџРѕ-РґРѕР»Сѓ Рµ РґР°РґРµРЅ РёР·С…РѕРґСЉС‚ РЅР° РµРєСЂР°РЅР° РїСЂРё РїСЂРёРјРµСЂРЅРѕ РёР·РїСЉР»РЅРµРЅРёРµ РЅР° С‚Р°Р·Рё РїСЂРѕРіСЂР°РјР°: 
 <pre><font color="#FF5E7E">
 I am the constructor 
    Enter name: Plamen 
@@ -99,13 +99,13 @@ Employee data
    Serial number = 31374143 
 I am the destructor </font>
 </pre> <br>
-Въпреки тези възможности в програмистката практика класовете и обектите се използват с техните функции, 
-конструктори и деструктори, докато структурите се използват без функции в тях. Също така структурите са 
-удобни за съхраняване на данни във файлове. <br>
-Тук ще споменем няколко разлики: в структурата всичките и членове по подразбиране са <font color="#42A994"><strong>публични (public)</strong></font>, 
-докато в класовете те са <font color="#42A994"><strong>частни (private)</strong></font>. Това означава, че в един клас може да се изпусне думата private, 
-но това не се препоръчва, защото прави кода по-трудно разбираем. Също така в една структура може част от 
-членовете да са private, но тогава ще са необходими функции на структурата за тяхната промяна и показване. 
+Р’СЉРїСЂРµРєРё С‚РµР·Рё РІСЉР·РјРѕР¶РЅРѕСЃС‚Рё РІ РїСЂРѕРіСЂР°РјРёСЃС‚РєР°С‚Р° РїСЂР°РєС‚РёРєР° РєР»Р°СЃРѕРІРµС‚Рµ Рё РѕР±РµРєС‚РёС‚Рµ СЃРµ РёР·РїРѕР»Р·РІР°С‚ СЃ С‚РµС…РЅРёС‚Рµ С„СѓРЅРєС†РёРё, 
+РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂРё Рё РґРµСЃС‚СЂСѓРєС‚РѕСЂРё, РґРѕРєР°С‚Рѕ СЃС‚СЂСѓРєС‚СѓСЂРёС‚Рµ СЃРµ РёР·РїРѕР»Р·РІР°С‚ Р±РµР· С„СѓРЅРєС†РёРё РІ С‚СЏС…. РЎСЉС‰Рѕ С‚Р°РєР° СЃС‚СЂСѓРєС‚СѓСЂРёС‚Рµ СЃР° 
+СѓРґРѕР±РЅРё Р·Р° СЃСЉС…СЂР°РЅСЏРІР°РЅРµ РЅР° РґР°РЅРЅРё РІСЉРІ С„Р°Р№Р»РѕРІРµ. <br>
+РўСѓРє С‰Рµ СЃРїРѕРјРµРЅРµРј РЅСЏРєРѕР»РєРѕ СЂР°Р·Р»РёРєРё: РІ СЃС‚СЂСѓРєС‚СѓСЂР°С‚Р° РІСЃРёС‡РєРёС‚Рµ Рё С‡Р»РµРЅРѕРІРµ РїРѕ РїРѕРґСЂР°Р·Р±РёСЂР°РЅРµ СЃР° <font color="#42A994"><strong>РїСѓР±Р»РёС‡РЅРё (public)</strong></font>, 
+РґРѕРєР°С‚Рѕ РІ РєР»Р°СЃРѕРІРµС‚Рµ С‚Рµ СЃР° <font color="#42A994"><strong>С‡Р°СЃС‚РЅРё (private)</strong></font>. РўРѕРІР° РѕР·РЅР°С‡Р°РІР°, С‡Рµ РІ РµРґРёРЅ РєР»Р°СЃ РјРѕР¶Рµ РґР° СЃРµ РёР·РїСѓСЃРЅРµ РґСѓРјР°С‚Р° private, 
+РЅРѕ С‚РѕРІР° РЅРµ СЃРµ РїСЂРµРїРѕСЂСЉС‡РІР°, Р·Р°С‰РѕС‚Рѕ РїСЂР°РІРё РєРѕРґР° РїРѕ-С‚СЂСѓРґРЅРѕ СЂР°Р·Р±РёСЂР°РµРј. РЎСЉС‰Рѕ С‚Р°РєР° РІ РµРґРЅР° СЃС‚СЂСѓРєС‚СѓСЂР° РјРѕР¶Рµ С‡Р°СЃС‚ РѕС‚ 
+С‡Р»РµРЅРѕРІРµС‚Рµ РґР° СЃР° private, РЅРѕ С‚РѕРіР°РІР° С‰Рµ СЃР° РЅРµРѕР±С…РѕРґРёРјРё С„СѓРЅРєС†РёРё РЅР° СЃС‚СЂСѓРєС‚СѓСЂР°С‚Р° Р·Р° С‚СЏС…РЅР°С‚Р° РїСЂРѕРјСЏРЅР° Рё РїРѕРєР°Р·РІР°РЅРµ. 
                 </font></div>
 				<br><br>
 </tr>
@@ -123,12 +123,12 @@ document.write('<div id="divStayTopLeft" style="position:absolute">')
 <table border="2" width="130" cellspacing="0" cellpadding="0">
   <tr>
     <td width="100%" bgcolor="#42A994">
-      <p align="center"><b><font size="4" color="#A3558E">Размер</font></b></td>
+      <p align="center"><b><font size="4" color="#A3558E">Р Р°Р·РјРµСЂ</font></b></td>
   </tr>
   <tr>
     <td width="100%" bgcolor="white">
-      <p align="left"> <a href="javascript:ts('body',1)">+ Larger Font</a> <br>
-       <a href="javascript:ts('body',-1)">+ Smaller Font</a> </td>
+      <p align="left">В <a href="javascript:ts('body',1)">+ Larger Font</a> <br>
+      В <a href="javascript:ts('body',-1)">+ Smaller Font</a> </td>
   </tr>
 </table>
 <!--END OF EDIT-->
