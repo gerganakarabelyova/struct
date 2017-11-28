@@ -1,7 +1,7 @@
 <html>
 <head>
-<title>:::C++ структури:::</title>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>:::C++ СЃС‚СЂСѓРєС‚СѓСЂРё:::</title>
+<meta http-equiv="Content-Type" content="text/html; charset="utf-8">
 <script type="text/javascript" src="textsizer.js">
 /***********************************************
 SKRIPTA ZA GOLEMI I MALKI BUKVI
@@ -38,12 +38,12 @@ SKRIPTA ZA GOLEMI I MALKI BUKVI
 <table border="0" bordercolor="#A3558E" width="75%" bgcolor="#015756">
 <tr>
 <td>
- <p align="center"> <font color="#000000" size="+3" face="Verdana"> <strong> <font color="#42A994">Дефиниране на структурни променливи</font> </strong> </font> </p>
+ <p align="center"> <font color="#000000" size="+3" face="Verdana"> <strong> <font color="#42A994">Р”РµС„РёРЅРёСЂР°РЅРµ РЅР° СЃС‚СЂСѓРєС‚СѓСЂРЅРё РїСЂРѕРјРµРЅР»РёРІРё</font> </strong> </font> </p>
               
               <div align="justify"><font color="#FFFFFF" size="-0" face="Verdana"><img src="pics/LetterD.jpg" width="50" height="31" align="left">
-			  ефинирането на такива променливи е като с всеки един тип в C++ - <font color="#42A994"><strong>първо се изписва името на типа 
-			  и след него се изписват имената на променливите, разделени със запетайка</strong></font>. Следният код дефинира 
-			  две променливи от типа employee. 
+			  РµС„РёРЅРёСЂР°РЅРµС‚Рѕ РЅР° С‚Р°РєРёРІР° РїСЂРѕРјРµРЅР»РёРІРё Рµ РєР°С‚Рѕ СЃ РІСЃРµРєРё РµРґРёРЅ С‚РёРї РІ C++ - <font color="#42A994"><strong>РїСЉСЂРІРѕ СЃРµ РёР·РїРёСЃРІР° РёРјРµС‚Рѕ РЅР° С‚РёРїР° 
+			  Рё СЃР»РµРґ РЅРµРіРѕ СЃРµ РёР·РїРёСЃРІР°С‚ РёРјРµРЅР°С‚Р° РЅР° РїСЂРѕРјРµРЅР»РёРІРёС‚Рµ, СЂР°Р·РґРµР»РµРЅРё СЃСЉСЃ Р·Р°РїРµС‚Р°Р№РєР°</strong></font>. РЎР»РµРґРЅРёСЏС‚ РєРѕРґ РґРµС„РёРЅРёСЂР° 
+			  РґРІРµ РїСЂРѕРјРµРЅР»РёРІРё РѕС‚ С‚РёРїР° employee. 
                 
 				<br><br>
 				
@@ -56,7 +56,7 @@ SKRIPTA ZA GOLEMI I MALKI BUKVI
 </tr>
 </table></center> <br> 
 				
-			  Спецификацията и декларацията може да се обединят в едно по следния начин, като се съкрати кодът: 
+			  РЎРїРµС†РёС„РёРєР°С†РёСЏС‚Р° Рё РґРµРєР»Р°СЂР°С†РёСЏС‚Р° РјРѕР¶Рµ РґР° СЃРµ РѕР±РµРґРёРЅСЏС‚ РІ РµРґРЅРѕ РїРѕ СЃР»РµРґРЅРёСЏ РЅР°С‡РёРЅ, РєР°С‚Рѕ СЃРµ СЃСЉРєСЂР°С‚Рё РєРѕРґСЉС‚: 
 			  <pre>
 struct employee 
 { 
@@ -65,8 +65,8 @@ struct employee
   unsigned long serial_number; 
 } e1, e2; 
 </pre> <br>
-			  Даже може да се премахне етикетът (името) на структурата employee и дефинирането 
-			  на тези две променливи да изглежда по следния начин: 
+			  Р”Р°Р¶Рµ РјРѕР¶Рµ РґР° СЃРµ РїСЂРµРјР°С…РЅРµ РµС‚РёРєРµС‚СЉС‚ (РёРјРµС‚Рѕ) РЅР° СЃС‚СЂСѓРєС‚СѓСЂР°С‚Р° employee Рё РґРµС„РёРЅРёСЂР°РЅРµС‚Рѕ 
+			  РЅР° С‚РµР·Рё РґРІРµ РїСЂРѕРјРµРЅР»РёРІРё РґР° РёР·РіР»РµР¶РґР° РїРѕ СЃР»РµРґРЅРёСЏ РЅР°С‡РёРЅ: 
 			  <pre>
 struct 
 { 
@@ -75,9 +75,9 @@ struct
   unsigned long serial_number; 
 } e1, e2; 
    </pre> <br>
-Обикновено това съкращаване се прави в малки програми, докато в големите проекти то може да доведе до неясноти. 
-Също така още при дефиницията една структурна променлива може да се инициализира 
-(Initializing Structure Variables) както е дадено по-долу: 
+РћР±РёРєРЅРѕРІРµРЅРѕ С‚РѕРІР° СЃСЉРєСЂР°С‰Р°РІР°РЅРµ СЃРµ РїСЂР°РІРё РІ РјР°Р»РєРё РїСЂРѕРіСЂР°РјРё, РґРѕРєР°С‚Рѕ РІ РіРѕР»РµРјРёС‚Рµ РїСЂРѕРµРєС‚Рё С‚Рѕ РјРѕР¶Рµ РґР° РґРѕРІРµРґРµ РґРѕ РЅРµСЏСЃРЅРѕС‚Рё. 
+РЎСЉС‰Рѕ С‚Р°РєР° РѕС‰Рµ РїСЂРё РґРµС„РёРЅРёС†РёСЏС‚Р° РµРґРЅР° СЃС‚СЂСѓРєС‚СѓСЂРЅР° РїСЂРѕРјРµРЅР»РёРІР° РјРѕР¶Рµ РґР° СЃРµ РёРЅРёС†РёР°Р»РёР·РёСЂР° 
+(Initializing Structure Variables) РєР°РєС‚Рѕ Рµ РґР°РґРµРЅРѕ РїРѕ-РґРѕР»Сѓ: 
 			  <pre>
 { 
   char name[20]; 
@@ -102,12 +102,12 @@ document.write('<div id="divStayTopLeft" style="position:absolute">')
 <table border="2" width="130" cellspacing="0" cellpadding="0">
   <tr>
     <td width="100%" bgcolor="#42A994">
-      <p align="center"><b><font size="4" color="#A3558E">Размер</font></b></td>
+      <p align="center"><b><font size="4" color="#A3558E">Р Р°Р·РјРµСЂ</font></b></td>
   </tr>
   <tr>
     <td width="100%" bgcolor="white">
-      <p align="left"> <a href="javascript:ts('body',1)">+ Larger Font</a> <br>
-       <a href="javascript:ts('body',-1)">+ Smaller Font</a> </td>
+      <p align="left">В <a href="javascript:ts('body',1)">+ Larger Font</a> <br>
+      В <a href="javascript:ts('body',-1)">+ Smaller Font</a> </td>
   </tr>
 </table>
 <!--END OF EDIT-->
