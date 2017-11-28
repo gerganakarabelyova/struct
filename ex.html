@@ -1,0 +1,205 @@
+<html>
+<head>
+<title>:::C++ структури:::</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script type="text/javascript" src="textsizer.js">
+/***********************************************
+SKRIPTA ZA GOLEMI I MALKI BUKVI
+***********************************************/
+</script>
+<style type="text/css">
+#menu1 a {color:black;background-color:white;text-decoration:none;text-indent:1ex;}
+#menu1 a:active {color:black;text-decoration:none;}
+#menu1 a:hover {color:black;background-color:#B8FFF1}
+#menu1 a:visited {color:black;text-decoration:none;}
+
+</style>
+<script src="mmenu.js" type="text/javascript"></script>
+<script src="menuItems.js" type="text/javascript"></script>
+
+  <style>
+       BODY {
+              scrollbar-arrow-color:FFFFFF;
+              scrollbar-3dlight-color:FFFFFF;
+              scrollbar-face-color:005555;
+              scrollbar-darkshadow-color:005555;
+              scrollbar-track-color:86A49B;
+              scrollbar-highlight-color:FFFFFF;
+              scrollbar-shadow-color:FFFFFF;
+            }
+    </style>
+
+
+
+
+</head>
+<body background="pics/background.jpg">
+<center>
+<table border="0" bordercolor="#A3558E" width="75%" bgcolor="#015756">
+<tr>
+<td>
+ <p align="center"> <font color="#000000" size="+3" face="Verdana"> <strong> <font color="#42A994">Примерни програми със структури</font> </strong> </font> </p>
+              
+              <div align="justify"><font color="#FFFFFF" size="-0" face="Verdana">
+
+			 <u> <font color="#A3558E"> Примерна програма №1: </font> </u>
+<pre>
+// strustak.cpp 
+#include < iostream.h > 
+#include < conio.h >      <font color="#A2BAFF">// за getche() </font>
+struct stackette               <font color="#A2BAFF">// структурата ни</font>
+{ 
+   int arr[20];                
+   int top;                    <font color="#A2BAFF">// индекса от началото на стака </font>
+}; 
+class Stack                    <font color="#A2BAFF">// клас</font>
+{ 
+   private: 
+      stackette st;            <font color="#A2BAFF">// структурна променлива </font>
+   public: 
+      void init()              <font color="#A2BAFF">// инициализиране на индекс </font>
+      { 
+         st.top = -1; 
+      } 
+      void push(int var)       <font color="#A2BAFF">// слагане на елемент в стака </font>
+      { 
+         st.arr[++st.top] = var; 
+      } 
+      int pop()                <font color="#A2BAFF">// чахане на елемент от стака </font>
+      { 
+         return st.arr[st.top--]; 
+      } 
+};  <font color="#A2BAFF">// класа Stack </font>
+void main() 
+{ 
+   Stack s1;                   <font color="#A2BAFF">// създаване на обект от тип стек </font>
+   s1.init();                  <font color="#A2BAFF">// инициализиране на обекта </font>
+   s1.push(11);                <font color="#A2BAFF">// слагаме 3 елемента в стека </font>
+   s1.push(12); 
+   s1.push(13); 
+   cout << s1.pop() << endl;  <font color="#A2BAFF">// изкарване на 3 обекта от стека </font>
+   cout << s1.pop() << endl; 
+   cout << s1.pop() << endl; 
+   <font color="#A2BAFF">// спираме</font>
+   getch(); 
+}  <font color="#A2BAFF">//end main </font>
+</pre> <br>
+
+<i>Свали пример:</i> <br><br>
+<a href="examples/strustak.cpp"><img src="pics/download_button.gif"></a> <br><br>
+
+Тъй като двете променливи <font color="#42A994"><strong>arr</strong></font> и <font color="#42A994"><strong>top</strong></font> 
+като едно цяло определят стека те се обединяват в една структура <font color="#42A994"><strong>stackette</strong></font>. 
+Съответно функции на класа също са променени, защото двете стари променливи са вече членове на една нова. 
+Обръщането към членовете на тази структура става с точковия оператор за достъп, например st.top = -1; 
+или return st.arr[st.top--];. <br><br> <br>
+<u> <font color="#A3558E"> Примерна програма №2: </font> </u>
+<pre>
+struct school
+{
+   int students;
+   int girls;
+   int boys;
+};
+
+int main()
+{
+   school pmg;
+   pmg.students = 100;
+   pmg.girls = 50;
+   pmg.boys = 50;
+   return 0;
+}
+</pre> <br>
+
+<i>Свали пример:</i> <br><br>
+<a href="examples/struct_example_2.cpp"><img src="pics/download_button.gif"></a> <br>
+<br>
+Структурите се създават извън функциите. След това за да се използваме дадена структура трябва да посочим точно 
+коя структура искаме да използваме. С school pmg създаваме променливата pmg съдържаща променливите students , 
+girls и boys. След това за достъп до променливите използваме pmg.students - името на променливата съдържаща 
+структурата + "." + исканата променлива от структурата. 
+                </font></div>
+				<br><br>
+</tr>
+</td>
+</table>
+</center>
+<script>
+if (!document.layers)
+document.write('<div id="divStayTopLeft" style="position:absolute">')
+</script>
+
+<layer id="divStayTopLeft">
+
+<!--EDIT BELOW CODE TO YOUR OWN MENU-->
+<table border="2" width="130" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%" bgcolor="#42A994">
+      <p align="center"><b><font size="4" color="#A3558E">Размер</font></b></td>
+  </tr>
+  <tr>
+    <td width="100%" bgcolor="white">
+      <p align="left"> <a href="javascript:ts('body',1)">+ Larger Font</a> <br>
+       <a href="javascript:ts('body',-1)">+ Smaller Font</a> </td>
+  </tr>
+</table>
+<!--END OF EDIT-->
+
+</layer>
+
+
+<script type="text/javascript">
+
+/*
+Floating Menu script-  Roy Whittle (http://www.javascript-fx.com/)
+Script featured on/available at http://www.dynamicdrive.com/
+This notice must stay intact for use
+*/
+
+//Enter "frombottom" or "fromtop"
+var verticalpos="frombottom"
+
+if (!document.layers)
+document.write('</div>')
+
+function JSFX_FloatTopDiv()
+{
+	var startX = 3,
+	startY = 150;
+	var ns = (navigator.appName.indexOf("Netscape") != -1);
+	var d = document;
+	function ml(id)
+	{
+		var el=d.getElementById?d.getElementById(id):d.all?d.all[id]:d.layers[id];
+		if(d.layers)el.style=el;
+		el.sP=function(x,y){this.style.left=x;this.style.top=y;};
+		el.x = startX;
+		if (verticalpos=="fromtop")
+		el.y = startY;
+		else{
+		el.y = ns ? pageYOffset + innerHeight : document.body.scrollTop + document.body.clientHeight;
+		el.y -= startY;
+		}
+		return el;
+	}
+	window.stayTopLeft=function()
+	{
+		if (verticalpos=="fromtop"){
+		var pY = ns ? pageYOffset : document.body.scrollTop;
+		ftlObj.y += (pY + startY - ftlObj.y)/8;
+		}
+		else{
+		var pY = ns ? pageYOffset + innerHeight : document.body.scrollTop + document.body.clientHeight;
+		ftlObj.y += (pY - startY - ftlObj.y)/8;
+		}
+		ftlObj.sP(ftlObj.x, ftlObj.y);
+		setTimeout("stayTopLeft()", 10);
+	}
+	ftlObj = ml("divStayTopLeft");
+	stayTopLeft();
+}
+JSFX_FloatTopDiv();
+</script>
+</body>
+</html>

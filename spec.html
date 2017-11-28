@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>:::C++ структури:::</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+<script type="text/javascript" src="textsizer.js">
+/***********************************************
+SKRIPTA ZA GOLEMI I MALKI BUKVI
+***********************************************/
+</script>
+
+
+<style type="text/css">
+#menu1 a {color:black;background-color:white;text-decoration:none;text-indent:1ex;}
+#menu1 a:active {color:black;text-decoration:none;}
+#menu1 a:hover {color:black;background-color:#B8FFF1}
+#menu1 a:visited {color:black;text-decoration:none;}
+
+</style>
+<script src="mmenu.js" type="text/javascript"></script>
+<script src="menuItems.js" type="text/javascript"></script>
+
+  <style>
+       BODY {
+              scrollbar-arrow-color:FFFFFF;
+              scrollbar-3dlight-color:FFFFFF;
+              scrollbar-face-color:005555;
+              scrollbar-darkshadow-color:005555;
+              scrollbar-track-color:86A49B;
+              scrollbar-highlight-color:FFFFFF;
+              scrollbar-shadow-color:FFFFFF;
+            }
+    </style>
+
+
+
+
+</head>
+
+<body background="pics/background.jpg">
+
+<center>
+<table border="0" bordercolor="#A3558E" width="75%" bgcolor="#015756">
+<tr>
+<td>
+ <p align="center"> <font color="#000000" size="+3" face="Verdana"> <strong> <font color="#42A994">Спецификация на структура</font> </strong> </font> </p>
+              
+              <div align="justify"><font color="#FFFFFF" size="-0" face="Verdana"><img src="pics/LetterCc.jpg" width="50" height="31" align="left">
+			  я започва в началото с ключовата дума <font color="#42A994"><strong>struct</strong></font> като след 
+			  нея следва името на типа, наричан още етикет <font color="#42A994"><strong>(tag)</strong></font>. 
+			  След името следва тялото на спецификацията, заградено с големи скоби и накрая точка и запетая. Тялото на 
+			  спецификацията може да се състои от списък от декларации на различни променливи. Тези отделни променливи 
+			  се наричат <font color="#42A994"><strong>членове на структурата (members)</strong></font>, за разлика от 
+			  елементите на масива (elements). Спецификацията 
+			  не създава променлива от тип структура, а само показва как ще изглежда този тип данни. 
+              Следващият код показва спецификацията на една структура, в която се пазят името на служителя, дължината на това име и 
+              служебният номер на служителя. 
+                
+				<br><br>
+				
+				
+<center><table border="3" bordercolor="#A3558E" width="110" height="110" bgcolor=white>
+<tr>
+<td>
+<center> <img src="pics/smiley_03.gif" align=middle></center>
+</td>
+<td><img src="pics/pr1.jpg"></td>
+</tr>
+</table></center> <br> 
+			  Друг пример:
+			  <pre>
+struct person  <font color="#A2BAFF">// person е името на структурата ни</font>
+ {
+   int age;      <font color="#A2BAFF">// 4-те променливи, които сме си избрали за структурата</font>
+   int height;
+   int weight;
+   bool student;
+ }; </pre> 
+ 
+ <i>Свали пример:</i> <br><br>
+<a href="examples/struct_example_1.cpp"><img src="pics/download_button.gif"></a> <br><br>
+
+			  Структорите представляват нещо като папки в които ние слагаме различни типове от информация.
+			  Те са много подобни на класовете в С++. Структорите са метод за организиране на много различни 
+			  типове променливи под едно име. Това много улеснява програмирането защото променливите свързани 
+			  с общо нещо са обединени под едно име.<br>
+              Общият вид на структорите в С++ е: <br><br>
+			  <pre>
+struct NAME
+  {
+     VARIABLES;
+  };   </pre> <br>
+Както виждате декларацията на структурата прилича много на декларацията на един клас, но 
+въпреки това структурите и класовете се използват за съвсем различни цели: в класовете имаме 
+функции, които оперират с неговите данни, докато обикновено в структурите нямаме такива функции. 
+C++ в сравнение със C разширява функционалността на структурите и те могат да имат функции в 
+тях, но по-принцип това се избягва в програмистката пратика. <br><br>
+                </font>
+				
+<center><table border="3" bordercolor="#A3558E" width="110" height="110" bgcolor=white>
+<tr>
+<td>
+<center> <img src="pics/smiley_09.gif" align=middle></center>
+</td>
+<td><img src="pics/ameno.jpg"></td>
+</tr>
+</table></center> <br>
+				</div>
+				
+				
+</tr>
+</td>
+</table>
+</center>
+
+<script>
+if (!document.layers)
+document.write('<div id="divStayTopLeft" style="position:absolute">')
+</script>
+
+<layer id="divStayTopLeft">
+
+<!--EDIT BELOW CODE TO YOUR OWN MENU-->
+<table border="2" width="130" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%" bgcolor="#42A994">
+      <p align="center"><b><font size="4" color="#A3558E">Размер</font></b></td>
+  </tr>
+  <tr>
+    <td width="100%" bgcolor="white">
+      <p align="left"> <a href="javascript:ts('body',1)">+ Larger Font</a> <br>
+       <a href="javascript:ts('body',-1)">+ Smaller Font</a> </td>
+  </tr>
+</table>
+<!--END OF EDIT-->
+
+</layer>
+
+
+<script type="text/javascript">
+
+/*
+Floating Menu script-  Roy Whittle (http://www.javascript-fx.com/)
+Script featured on/available at http://www.dynamicdrive.com/
+This notice must stay intact for use
+*/
+
+//Enter "frombottom" or "fromtop"
+var verticalpos="frombottom"
+
+if (!document.layers)
+document.write('</div>')
+
+function JSFX_FloatTopDiv()
+{
+	var startX = 3,
+	startY = 150;
+	var ns = (navigator.appName.indexOf("Netscape") != -1);
+	var d = document;
+	function ml(id)
+	{
+		var el=d.getElementById?d.getElementById(id):d.all?d.all[id]:d.layers[id];
+		if(d.layers)el.style=el;
+		el.sP=function(x,y){this.style.left=x;this.style.top=y;};
+		el.x = startX;
+		if (verticalpos=="fromtop")
+		el.y = startY;
+		else{
+		el.y = ns ? pageYOffset + innerHeight : document.body.scrollTop + document.body.clientHeight;
+		el.y -= startY;
+		}
+		return el;
+	}
+	window.stayTopLeft=function()
+	{
+		if (verticalpos=="fromtop"){
+		var pY = ns ? pageYOffset : document.body.scrollTop;
+		ftlObj.y += (pY + startY - ftlObj.y)/8;
+		}
+		else{
+		var pY = ns ? pageYOffset + innerHeight : document.body.scrollTop + document.body.clientHeight;
+		ftlObj.y += (pY - startY - ftlObj.y)/8;
+		}
+		ftlObj.sP(ftlObj.x, ftlObj.y);
+		setTimeout("stayTopLeft()", 10);
+	}
+	ftlObj = ml("divStayTopLeft");
+	stayTopLeft();
+}
+JSFX_FloatTopDiv();
+</script>
+
+</body>
+</html>
