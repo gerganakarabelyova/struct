@@ -1,7 +1,7 @@
 <html>
 <head>
-<title>:::C++ структури:::</title>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>:::C++ СЃС‚СЂСѓРєС‚СѓСЂРё:::</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 <script type="text/javascript" src="textsizer.js">
 /***********************************************
 SKRIPTA ZA GOLEMI I MALKI BUKVI
@@ -38,62 +38,62 @@ SKRIPTA ZA GOLEMI I MALKI BUKVI
 <table border="0" bordercolor="#A3558E" width="75%" bgcolor="#015756">
 <tr>
 <td>
- <p align="center"> <font color="#000000" size="+3" face="Verdana"> <strong> <font color="#42A994">Примерни програми със структури</font> </strong> </font> </p>
+ <p align="center"> <font color="#000000" size="+3" face="Verdana"> <strong> <font color="#42A994">РџСЂРёРјРµСЂРЅРё РїСЂРѕРіСЂР°РјРё СЃСЉСЃ СЃС‚СЂСѓРєС‚СѓСЂРё</font> </strong> </font> </p>
               
               <div align="justify"><font color="#FFFFFF" size="-0" face="Verdana">
 
-			 <u> <font color="#A3558E"> Примерна програма №1: </font> </u>
+			 <u> <font color="#A3558E"> РџСЂРёРјРµСЂРЅР° РїСЂРѕРіСЂР°РјР° в„–1: </font> </u>
 <pre>
 // strustak.cpp 
 #include < iostream.h > 
-#include < conio.h >      <font color="#A2BAFF">// за getche() </font>
-struct stackette               <font color="#A2BAFF">// структурата ни</font>
+#include < conio.h >      <font color="#A2BAFF">// Р·Р° getche() </font>
+struct stackette               <font color="#A2BAFF">// СЃС‚СЂСѓРєС‚СѓСЂР°С‚Р° РЅРё</font>
 { 
    int arr[20];                
-   int top;                    <font color="#A2BAFF">// индекса от началото на стака </font>
+   int top;                    <font color="#A2BAFF">// РёРЅРґРµРєСЃР° РѕС‚ РЅР°С‡Р°Р»РѕС‚Рѕ РЅР° СЃС‚Р°РєР° </font>
 }; 
-class Stack                    <font color="#A2BAFF">// клас</font>
+class Stack                    <font color="#A2BAFF">// РєР»Р°СЃ</font>
 { 
    private: 
-      stackette st;            <font color="#A2BAFF">// структурна променлива </font>
+      stackette st;            <font color="#A2BAFF">// СЃС‚СЂСѓРєС‚СѓСЂРЅР° РїСЂРѕРјРµРЅР»РёРІР° </font>
    public: 
-      void init()              <font color="#A2BAFF">// инициализиране на индекс </font>
+      void init()              <font color="#A2BAFF">// РёРЅРёС†РёР°Р»РёР·РёСЂР°РЅРµ РЅР° РёРЅРґРµРєСЃ </font>
       { 
          st.top = -1; 
       } 
-      void push(int var)       <font color="#A2BAFF">// слагане на елемент в стака </font>
+      void push(int var)       <font color="#A2BAFF">// СЃР»Р°РіР°РЅРµ РЅР° РµР»РµРјРµРЅС‚ РІ СЃС‚Р°РєР° </font>
       { 
          st.arr[++st.top] = var; 
       } 
-      int pop()                <font color="#A2BAFF">// чахане на елемент от стака </font>
+      int pop()                <font color="#A2BAFF">// С‡Р°С…Р°РЅРµ РЅР° РµР»РµРјРµРЅС‚ РѕС‚ СЃС‚Р°РєР° </font>
       { 
          return st.arr[st.top--]; 
       } 
-};  <font color="#A2BAFF">// класа Stack </font>
+};  <font color="#A2BAFF">// РєР»Р°СЃР° Stack </font>
 void main() 
 { 
-   Stack s1;                   <font color="#A2BAFF">// създаване на обект от тип стек </font>
-   s1.init();                  <font color="#A2BAFF">// инициализиране на обекта </font>
-   s1.push(11);                <font color="#A2BAFF">// слагаме 3 елемента в стека </font>
+   Stack s1;                   <font color="#A2BAFF">// СЃСЉР·РґР°РІР°РЅРµ РЅР° РѕР±РµРєС‚ РѕС‚ С‚РёРї СЃС‚РµРє </font>
+   s1.init();                  <font color="#A2BAFF">// РёРЅРёС†РёР°Р»РёР·РёСЂР°РЅРµ РЅР° РѕР±РµРєС‚Р° </font>
+   s1.push(11);                <font color="#A2BAFF">// СЃР»Р°РіР°РјРµ 3 РµР»РµРјРµРЅС‚Р° РІ СЃС‚РµРєР° </font>
    s1.push(12); 
    s1.push(13); 
-   cout << s1.pop() << endl;  <font color="#A2BAFF">// изкарване на 3 обекта от стека </font>
+   cout << s1.pop() << endl;  <font color="#A2BAFF">// РёР·РєР°СЂРІР°РЅРµ РЅР° 3 РѕР±РµРєС‚Р° РѕС‚ СЃС‚РµРєР° </font>
    cout << s1.pop() << endl; 
    cout << s1.pop() << endl; 
-   <font color="#A2BAFF">// спираме</font>
+   <font color="#A2BAFF">// СЃРїРёСЂР°РјРµ</font>
    getch(); 
 }  <font color="#A2BAFF">//end main </font>
 </pre> <br>
 
-<i>Свали пример:</i> <br><br>
+<i>РЎРІР°Р»Рё РїСЂРёРјРµСЂ:</i> <br><br>
 <a href="examples/strustak.cpp"><img src="pics/download_button.gif"></a> <br><br>
 
-Тъй като двете променливи <font color="#42A994"><strong>arr</strong></font> и <font color="#42A994"><strong>top</strong></font> 
-като едно цяло определят стека те се обединяват в една структура <font color="#42A994"><strong>stackette</strong></font>. 
-Съответно функции на класа също са променени, защото двете стари променливи са вече членове на една нова. 
-Обръщането към членовете на тази структура става с точковия оператор за достъп, например st.top = -1; 
-или return st.arr[st.top--];. <br><br> <br>
-<u> <font color="#A3558E"> Примерна програма №2: </font> </u>
+РўСЉР№ РєР°С‚Рѕ РґРІРµС‚Рµ РїСЂРѕРјРµРЅР»РёРІРё <font color="#42A994"><strong>arr</strong></font> Рё <font color="#42A994"><strong>top</strong></font> 
+РєР°С‚Рѕ РµРґРЅРѕ С†СЏР»Рѕ РѕРїСЂРµРґРµР»СЏС‚ СЃС‚РµРєР° С‚Рµ СЃРµ РѕР±РµРґРёРЅСЏРІР°С‚ РІ РµРґРЅР° СЃС‚СЂСѓРєС‚СѓСЂР° <font color="#42A994"><strong>stackette</strong></font>. 
+РЎСЉРѕС‚РІРµС‚РЅРѕ С„СѓРЅРєС†РёРё РЅР° РєР»Р°СЃР° СЃСЉС‰Рѕ СЃР° РїСЂРѕРјРµРЅРµРЅРё, Р·Р°С‰РѕС‚Рѕ РґРІРµС‚Рµ СЃС‚Р°СЂРё РїСЂРѕРјРµРЅР»РёРІРё СЃР° РІРµС‡Рµ С‡Р»РµРЅРѕРІРµ РЅР° РµРґРЅР° РЅРѕРІР°. 
+РћР±СЂСЉС‰Р°РЅРµС‚Рѕ РєСЉРј С‡Р»РµРЅРѕРІРµС‚Рµ РЅР° С‚Р°Р·Рё СЃС‚СЂСѓРєС‚СѓСЂР° СЃС‚Р°РІР° СЃ С‚РѕС‡РєРѕРІРёСЏ РѕРїРµСЂР°С‚РѕСЂ Р·Р° РґРѕСЃС‚СЉРї, РЅР°РїСЂРёРјРµСЂ st.top = -1; 
+РёР»Рё return st.arr[st.top--];. <br><br> <br>
+<u> <font color="#A3558E"> РџСЂРёРјРµСЂРЅР° РїСЂРѕРіСЂР°РјР° в„–2: </font> </u>
 <pre>
 struct school
 {
@@ -112,13 +112,13 @@ int main()
 }
 </pre> <br>
 
-<i>Свали пример:</i> <br><br>
+<i>РЎРІР°Р»Рё РїСЂРёРјРµСЂ:</i> <br><br>
 <a href="examples/struct_example_2.cpp"><img src="pics/download_button.gif"></a> <br>
 <br>
-Структурите се създават извън функциите. След това за да се използваме дадена структура трябва да посочим точно 
-коя структура искаме да използваме. С school pmg създаваме променливата pmg съдържаща променливите students , 
-girls и boys. След това за достъп до променливите използваме pmg.students - името на променливата съдържаща 
-структурата + "." + исканата променлива от структурата. 
+РЎС‚СЂСѓРєС‚СѓСЂРёС‚Рµ СЃРµ СЃСЉР·РґР°РІР°С‚ РёР·РІСЉРЅ С„СѓРЅРєС†РёРёС‚Рµ. РЎР»РµРґ С‚РѕРІР° Р·Р° РґР° СЃРµ РёР·РїРѕР»Р·РІР°РјРµ РґР°РґРµРЅР° СЃС‚СЂСѓРєС‚СѓСЂР° С‚СЂСЏР±РІР° РґР° РїРѕСЃРѕС‡РёРј С‚РѕС‡РЅРѕ 
+РєРѕСЏ СЃС‚СЂСѓРєС‚СѓСЂР° РёСЃРєР°РјРµ РґР° РёР·РїРѕР»Р·РІР°РјРµ. РЎ school pmg СЃСЉР·РґР°РІР°РјРµ РїСЂРѕРјРµРЅР»РёРІР°С‚Р° pmg СЃСЉРґСЉСЂР¶Р°С‰Р° РїСЂРѕРјРµРЅР»РёРІРёС‚Рµ students , 
+girls Рё boys. РЎР»РµРґ С‚РѕРІР° Р·Р° РґРѕСЃС‚СЉРї РґРѕ РїСЂРѕРјРµРЅР»РёРІРёС‚Рµ РёР·РїРѕР»Р·РІР°РјРµ pmg.students - РёРјРµС‚Рѕ РЅР° РїСЂРѕРјРµРЅР»РёРІР°С‚Р° СЃСЉРґСЉСЂР¶Р°С‰Р° 
+СЃС‚СЂСѓРєС‚СѓСЂР°С‚Р° + "." + РёСЃРєР°РЅР°С‚Р° РїСЂРѕРјРµРЅР»РёРІР° РѕС‚ СЃС‚СЂСѓРєС‚СѓСЂР°С‚Р°. 
                 </font></div>
 				<br><br>
 </tr>
@@ -136,12 +136,12 @@ document.write('<div id="divStayTopLeft" style="position:absolute">')
 <table border="2" width="130" cellspacing="0" cellpadding="0">
   <tr>
     <td width="100%" bgcolor="#42A994">
-      <p align="center"><b><font size="4" color="#A3558E">Размер</font></b></td>
+      <p align="center"><b><font size="4" color="#A3558E">Р Р°Р·РјРµСЂ</font></b></td>
   </tr>
   <tr>
     <td width="100%" bgcolor="white">
-      <p align="left"> <a href="javascript:ts('body',1)">+ Larger Font</a> <br>
-       <a href="javascript:ts('body',-1)">+ Smaller Font</a> </td>
+      <p align="left">В <a href="javascript:ts('body',1)">+ Larger Font</a> <br>
+      В <a href="javascript:ts('body',-1)">+ Smaller Font</a> </td>
   </tr>
 </table>
 <!--END OF EDIT-->
