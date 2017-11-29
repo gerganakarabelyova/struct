@@ -1,5 +1,5 @@
 # Structures in C++
-# Used technologies: HTML, CSS, JavaScript, C++ (for the examples).
+# Used technologies: HTML, CSS, JavaScript, C++ (for the examples)
 # Year: 2010
 # Author: Gergana Karabelyova
 
